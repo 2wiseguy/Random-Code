@@ -1,0 +1,75 @@
+body {
+   background: url("background.gif");
+   height: 100vh;
+   width: 100vw;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+}
+
+h1 {
+   font: bold 30px "Century Gothic", sans-serif;
+   color: white;
+}
+
+h2 {
+   font: 20px "Century Gothic", sans-serif;
+   color: white;
+}
+
+button {
+   font: 18px "Century Gothic", sans-serif;
+   border-radius: 20px;
+   border-color: white;
+   background-color: black;
+   color: white;
+   padding: 5px;
+   animation-name: button2;
+   animation-duration: .5s;
+}
+
+button:hover {
+   border-radius: 2px;
+   animation-name: button1;
+   animation-duration: .5s;
+}
+
+#click-power {
+   display: none;
+}
+
+#click-ot {
+   display: none;
+}
+
+#gamble {
+   display: none;
+}
+
+#autoWin {
+   display: none;
+}
+
+
+/* Keyframes Animations */
+
+@keyframes button1 {
+   from {
+      border-radius: 20px;
+   }
+   to {
+      border-radius: 2px;
+   }
+}
+
+@keyframes button2 {
+   from {
+      border-radius: 2px;
+   }
+   to {
+      border-radius: 20px;
+   }
+}
